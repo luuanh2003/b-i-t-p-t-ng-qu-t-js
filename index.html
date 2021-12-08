@@ -5,27 +5,15 @@
     <title>Hiển Thị Kết Quả trong HTML</title>
 </head>
 <body>
-<button onclick="anh1();"> Click me!</button>
-<br>
-<div id="anh2"></div>
-<button onclick="anh4();">Click 1 !</button>
-<br>
-<button onclick="anh3();">Click 2</button>
-<br>
-<button onclick="anh5();">Click 3</button>
+<p onmouseover="mouseover()" onmouseout="mouseout()" id="got">Xe Máy</p>
 <script>
-    function anh1(){
-        alert('Mình Là Anh1')
+    function mouseover(){
+        document.getElementById("got").style.color= "blue";
     }
-    function anh4(){
-        document.getElementById('anh2').innerHTML = 'Xin chào!';
-    }
-    function anh3()
-    {document.write('hello!')
-        }
-    function anh5()
-    {console.log('anh nè')
+    function mouseout(){
+        document.getElementById("got").style.color="red";
     }
 </script>
+
 </body>
 </html>
