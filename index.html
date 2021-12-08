@@ -5,15 +5,17 @@
     <title>Hiển Thị Kết Quả trong HTML</title>
 </head>
 <body>
-<p onmouseover="mouseover()" onmouseout="mouseout()" id="got">Xe Máy</p>
+<select name="" id="ok" onchange="mau()">
+    <option value="Xanh">Blue</option>
+    <option value="Vàng">Yellow</option>
+    <option value="Đỏ">Red</option>
+    <option value="Trắng">White</option>
+</select>
 <script>
-    function mouseover(){
-        document.getElementById("got").style.color= "blue";
-    }
-    function mouseout(){
-        document.getElementById("got").style.color="red";
+    function mau(){
+    var hi = document.getElementById("ok").value;
+    alert(hi)
     }
 </script>
-
 </body>
 </html>
