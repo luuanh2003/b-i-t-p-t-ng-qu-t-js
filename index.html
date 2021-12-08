@@ -5,16 +5,11 @@
     <title>Hiển Thị Kết Quả trong HTML</title>
 </head>
 <body>
-<select name="" id="ok" onchange="mau()">
-    <option value="Xanh">Blue</option>
-    <option value="Vàng">Yellow</option>
-    <option value="Đỏ">Red</option>
-    <option value="Trắng">White</option>
-</select>
+ <button onclick="chao()" id="hello">Click me</button>
 <script>
-    function mau(){
-    var hi = document.getElementById("ok").value;
-    alert(hi)
+    function chao(){
+        document.getElementById('hello')
+        alert('Xin Chao')
     }
 </script>
 </body>
